@@ -2,7 +2,7 @@
 <html>
 <head lang ="en">
 <meta charset="UTF-8">
-<meta name="title" content="Law Soc Website - Home Page">
+<meta name="title" content="LawLah! Website - Home Page">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 body{
@@ -35,9 +35,27 @@ border-radius:8px;
 }
 #Logo{
 padding-left:20px;
+text-align:right;
 }
 td{
+padding:15px;
 color:#6D5EBA;
+border-radius: 10px;
+}
+#picture_expand{
+padding: 30px;
+}
+#picture_expand:hover{
+-ms-transform:scale(1.2);
+-webkit-transform:scale(1.2);
+transform:scale(1.05);
+transition:transform .4s;
+}
+th{
+padding:20px;
+color:#6D5EBA;
+font-family:"brush script mt";
+font-size:2em;
 }
 a{
 color:#6D5EBA;
@@ -67,9 +85,9 @@ font-size:15px;
 nav li:hover{
 color:#6D5EBA;
 text-decoration:underline;
--ms-transform: scale(1.5); 
--webkit-transform: scale(1.5); 
-transform: scale(1.1); 
+-ms-transform: scale(1.5);
+-webkit-transform: scale(1.5);
+transform: scale(1.1);
 transition: transform .3s;
 }
 #background{
@@ -153,9 +171,9 @@ padding:10px 35px;
 font-size:15px;
 }
 div li:hover{
--ms-transform: scale(1.5); 
--webkit-transform: scale(1.5); 
-transform: scale(1.3); 
+-ms-transform: scale(1.5);
+-webkit-transform: scale(1.5);
+transform: scale(1.3);
 transition: transform .4s;
 color:#6D5EBA;
 }
@@ -171,19 +189,13 @@ border-radius:10px;
 background-color:#6D5EBA50;
 text-align:center;
 }
-#Quotetable:hover{
-background-color:#ffccff50;
-color:#6D5EBA;
--ms-transform: scale(1.3); 
--webkit-transform: scale(1.3); 
-transform: scale(1.05); 
-transition: transform .4s;
-}
 #name{
 font-family:"Garamond";
 font-size:25px;
 color: #6D5EBA;
-
+}
+#info{
+background-color: #ffffff50;
 }
 #quote{
 font-family:"Garamond";
@@ -197,10 +209,37 @@ text-align:center;
 }
 footer:hover{
 color:#6D5EBA;
--ms-transform: scale(1.2); 
--webkit-transform: scale(1.2); 
-transform: scale(1.1); 
+-ms-transform: scale(1.2);
+-webkit-transform: scale(1.2);
+transform: scale(1.1);
 transition: transform .5s;
+}
+div.picture{
+width: 100%
+background-color:#ffffff90;
+box-shadow:0 10px 20px 0 rgba(0, 0, 0, 0.5), 0 15px 20px 0 rgba(0, 0, 0, 0.19);
+margin-bottom:25px;
+}
+div.descriptionbox{
+text-align: center;
+padding: 5px 10px;
+color:#6D5EBA;
+background-color:#ffffff90;
+}
+div.descriptionbox:hover{
+color:#6D5EBA;
+-ms-transform:scale(1.5);
+-webkit-transform: scale(1.5);
+transform:scale(1.0);
+transition:transform .4s;
+}
+#PictureTable{
+width:100%;
+text-align:"center";
+padding:50px;
+background-color:#6D5EBA30;
+border-radius:10px;
+table-border: 0px:
 }
 </style>
 </head>
@@ -208,12 +247,11 @@ transition: transform .5s;
 <header>
 <table>
 <tr>
-<th><span id="HTitle">LAW SOCIETY GISKL</span></th>
-<th><span id="HDesc">Founded in Jan 2024~</span></th>
-<td id="Logo"><img src="Logo.png" alt="logo" width="70" height="70"></td>
+<th><span id="HTitle">LAWLAH!</span></th>
+<td rowspan="2" id="Logo"><img src="Logo.png" alt="logo" width="150" height="150"></td>
 </tr>
 <tr>
-<td id="Title">Hi! Welcome to the official Law Soc website!</td>
+<td id="Title">Hi! Welcome to the official LawLah! website!</td>
 </td>
 </tr>
 </table>
@@ -223,15 +261,15 @@ transition: transform .5s;
 <li><a href="Law_Soc_Homepage.html">Home</a></li>
 <li>
 <div class="dropdown">
-<button class="dropbutton">Gallery</button>
+<button class="dropbutton">Articles</button>
 <div class="option">
-<a href="Law_Soc_Articles.html">Articles</a>
+<a href="Law_Soc_Articles.html">Student's Articles</a>
 <a href="Law_Soc_News.html">Latest news!!!</a>
-<a href="Law_Soc_Goodreads.html">Stuff to read...</a>
+<a href="Law_Soc_Goodreads.html">Extra stuff to read...</a>
 </div>
 </div>
 </li>
-<li><a href="Law_Soc_FoundingMembers.html">Founding Members</a></li>
+<li><a href="Law_Soc_PPE.html"><style="font-size:20px;">PPE</style></a></li>
 <li><a href="Law_Soc_Contact.html">Contact</a></li>
 </ul>
 </nav>
@@ -240,86 +278,112 @@ transition: transform .5s;
 <div id="background">
 <div class="textbox">
 <div class="textboxTitle">A little about us...</div>
-<div class="textboxPicture1"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fsimilarpng.com%2Fsimple-justice
--scales-legal-law-logo-design-on-transparent-background-png%2F&psig=AOvVaw0Wv3PBedtIsvO6JYv8BEcl&ust=1706660573585000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCJCtypvsg4QDFQAAAAAdAAAAABAE" 
-height="100px" width="100px"></div>
 <br>
-<span id="bio">│ Justice │ Advocacy │ Law │ Rights │ Integrity │</span>
-<hr><br>
-The <b>Law Society of Garden International School </b>is a female-led student platform dedicated to fostering a dynamic and inclusive community for aspiring law students, where knowledge and guidance coexist to future cohort of legal leaders.
+<span id="bio"><b>│ Justice │ Advocacy │ Law │ Rights │ Integrity │</b></span>
 <br><br>
-<table>
+<b>LawLah!</b> of <b>Garden International School </b>is a female-led student platform dedicated to fostering a dynamic and inclusive community for aspiring law students, where knowledge and guidance coexist to future cohort of legal leaders.
+<br>
+<br>
+<table span id="PictureTable" >
 <tr>
-<td width="50%">
-<b>Our mission: </b><br> 
-To provide a platform that equips students with the resources, advice and guidance necessary to excel in the field of law.
-<br>
+<th colspan="4">Founding Members</th>
+</tr>
+<tr span id="info">
+<td span id="picture_expand">
+<div class="picture">
+<img src="Ashley.png" alt="Ashley" style="width:100%">
+<div class="descriptionbox">
+<p>Ashley Lau<br>Founder</p></td>
+<td>Hi, I'm Ashley, a 6th form student. I'm interested in law and intend to pursue it. Our platform provides guidance and extensive research to help assist and aid aspiring law students to advance to a career in law.</td>
+</div>
+</div>
 </td>
-<td width="50%">
-<b>What we do: </b>
-<br>
-Enable students to read and produce articles through conducting extensive research, while also including tips for top law university applicatiions!
-<br>
+<td span id="picture_expand">
+<div class="picture">
+<img src="Aisha.png" alt="Aisha" style="width:100%">
+<div class="descriptionbox">
+<p>Aisha Wilson<br>Co-Founder &<br>Graphic Designer</p></td>
+<td>Hi I'm Aisha and I'm a sixth form student who's currently interesting in applying for law in uni. I hope this platform can help inspire and guide other aspiring law students <3 </td>
+</td>
+</div>
+</div>
+</tr>
+<tr span id="info">
+<td span id="picture_expand">
+<div class="picture">
+<img src="Claire.png" alt="Claire" style="width:100%">
+<div class="descriptionbox">
+<p>Claire Lim<br>Head Editor</p></td>
+<td>Hey, my name's Claire! I'm a student in Year 12 taking A Level English, Sociology, Psychology and Drama. I'm currently interested and plan to pursue Law as a career path in the future!</td>
+</div>
+</div>
+<td span id="picture_expand">
+<div class="picture">
+<img src="Kara.png" alt="Kara" style="width:100%">
+<div class="descriptionbox">
+<p>Kara Kelly<br>Editor</p></td>
+<td>Hi! My name is Kara and I am in Sixth Form. I've always had a passion for language and public speaking. I have been a part of many MUN and debate groups.</td>
+</div>
+</div>
 </td>
 </tr>
+<tr span id="info">
+<td span id="picture_expand">
+<div class="picture">
+<img src="Angel.png" alt="Angel" style="width:100%">
+<div class="descriptionbox">
+<p>Angel Kau<br>Editor</p></td>
+<td>I'm doing A Levels in Biology, psychology and maths. I'm interested in pursuing law in the future and I look forward to explore more about different types of law <3</td>
+</td>
+</div>
+</div>
+<td span id="picture_expand">
+<div class="picture">
+<img src="Eumelia.png" alt="Eumelia" style="width:100%">
+<div class="descriptionbox">
+<p>Eumelia Chew<br>Editor</p></td>
+<td>Heyy I'm Eumelia, a year 12 student currently studying A Level Physics, Economics, Maths and Computer Science. I'm interested in pursuing law, specifically family or corporate law.</td>
+</td>
+</tr>
+<tr span id="info">
+<td span id="picture_expand">
+<div class="picture">
+<img src="Athena.png" alt="Athena" style="width:100%">
+<div class="descriptionbox">
+<p>Athena Sia<br>Website builder & manager</p></td>
+<td>Hello, I'm Athena and I'm currently a year 12 student studying at GIS. I've always been interested in learning more about the law and how it protects individuals and their rights.</td>
+<td colspan="2">
+MORE INFO
+</td>
+</div>
+</div>
+</td>
+</div>
+</div>
+</tr>
 </table>
-<hr>
-<span style="color:#6D5EBA;font-style:italic;font-family:Georgia;">
-Latest Articles:
-<div>
-<div class="Articles">
-<ul>
-<li>Constitutional Law</li><br>
-<li><img src="https://i.pinimg.com/originals/d7/78/8b/d7788bc79271efe447f57b29fee1bc01.png" alt="painting" height="50px" width="50px"></li>
-<li><img src="https://i.pinimg.com/736x/6e/5d/52/6e5d5213855843b1e80b7144dd8b91e7.jpg" alt="painting" height="50px" width="50px"></li>
-<li><img src="https://i.pinimg.com/originals/ba/c4/c1/bac4c1af0d5ce54fc189c79bfe26485c.jpg" alt="painting" height="50px" width="50px"></li>
-<li><img src="https://images-na.ssl-images-amazon.com/images/I/717uYtyEK6L._SL1000_.jpg" alt="painting" height="50px" width="50px"></li>
-<li><img src="https://images.saatchiart.com/saatchi/1104128/art/7592041/6660655-GKFRRELS-6.jpg" alt="painting" height="50px" width="50px"></li>
-</ul>
-<ul>
-<li>Criminal Law</li><br>
-<li><img src="https://i.pinimg.com/originals/04/ce/e7/04cee7f2435004c446f69602986a8149.jpg" alt="photo" height="50px" width="50px"></li>
-<li><img src="https://i.pinimg.com/originals/f0/cf/82/f0cf82ee051b8efa5f867a3001120238.jpg" alt="photo" height="50px" width="50px"></li>
-<li><img src="https://i.pinimg.com/736x/bf/c5/c9/bfc5c94c128495bfa3370a4533b457e3.jpg" alt="photo" height="50px" width="50px"></li>
-<li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTSMZVpy_Gk3zXnWfAxe9TD9XoYSwpL1hf5iU0OaWUwJ4y_gAH3E-HsB_fHJ1BguYRSdI&usqp=CAU" alt="photo" height="50px" width="50px"></li>
-<li><img src="https://i.pinimg.com/originals/ff/01/b7/ff01b73f85d44563d038b3876b0d675e.jpg" alt="photo" height="50px" width="50px"></li>
-</ul>
-<ul>
-<li>Employment Law</li><br>
-<li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8dliNpLsL7aTdsK3cWWaFF2gYh715uFzH5A&usqp=CAU" alt="show" height="50px" width="50px"></li>
-<li><img src="https://www.spoon-tamago.com/wp-content/uploads/2018/12/tonarinototoro2018_1126_01_fixw_640_hq.jpg" alt="show" height="50px" width="50px"></li>
-<li><img src="https://i.pinimg.com/originals/a7/e0/3e/a7e03e0611bc538b9eb48c5d26040d2a.jpg" alt="show" height="50px" width="50px"></li>
-<li><img src="https://i.redd.it/pkk9guou7ot41.jpg" alt="show" height="50px" width="50px"></li>
-<li><img src="https://upload.wikimedia.org/wikipedia/en/d/df/Nakitai_Watashi_wa_Neko_o_Kaburu_poster.png" alt="show" height="50px" width="50px"></li>
-</ul>
-<ul>
-<li>Banking Law</li><br>
-<li><img src="https://syimg.3dmgame.com/uploadimg/upload/image/20200529/20200529115105_79873.jpg" alt="game" height="50px" width="50px"></li>
-<li><img src="https://iosgods.com/applications/core/interface/imageproxy/imageproxy.php?img=https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/61/da/1b/61da1b4e-0117-8992-08fa-080e0fbea89c/source/350x350bb.jpg&key=c9f729757d3b84d86f3be8aaaf95c988a7aace236cbf154537cf9af0f51bb6b7" alt="game" height="50px" width="50px"></li>
-<li><img src="https://www.amongusavatarcreator.com/assets/img/characters/600/cyan.png" alt="game" height="50px" width="50px"></li>
-<li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW_sAMz1bHb4GEJh_CX0NXrIucsHojQQ62VPeZlQljHXZc-OoVyozLy4hpDnOpALF7Lnk&usqp=CAU" alt="game" height="50px" width="50px"></li>
-<li><img src="https://www.nicepng.com/png/detail/169-1694285_wendy-rose-don-t-starve-together-victorian-wendy.png" alt="game" height="50px" width="50px"></li>
-</ul>
-<ul>
-<li>Family Law</li><br>
-<li><img src="https://i.ytimg.com/vi/6OUbakqakCE/maxresdefault.jpg" alt="music" height="50px" width="50px"></li>
-<li><img src="https://i.redd.it/vrskgjse24721.jpg" alt="music" height="50px" width="50px"></li>
-<li><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Shawn_Mendes_In_My_Blood.png/220px-Shawn_Mendes_In_My_Blood.png" alt="music" height="50px" width="50px"></li>
-<li><img src="https://i1.sndcdn.com/artworks-000228544884-8r77ru-t500x500.jpg" alt="music" height="50px" width="50px"></li>
-<li><img src="https://opradre.com/wp-content/uploads/2020/07/Capture-3-696x524.jpg" alt="music" height="50px" width="50px"></li>
-</ul>
-<ul>
-<li>Military Law</li><br>
-<li><img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/20/Eclipsecover.jpg/220px-Eclipsecover.jpg" alt="book" height="50px" width="50px"></li>
-<li><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1503181967l/32505753._SY475_.jpg" alt="book" height="50px" width="50px"></li>
-<li><img src="https://legenbooksdary.files.wordpress.com/2018/08/img_0068.jpg?w=1140" alt="book" height="50px" width="50px"></li>
-<li><img src="https://images-na.ssl-images-amazon.com/images/I/51mJEataWuL._SX337_BO1,204,203,200_.jpg" alt="book" height="50px" width="50px"></li>
-<li><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1529358577l/39939417._SY475_.jpg" alt="book" height="50px" width="50px"></li>
-</ul>
-</div>
-</div>
-</span>
-<hr>
+<br>
+<table border-spacing: 20px;>
+<tr>
+<td width="50%">
+<b>Our mission: </b><br>
+To provide a platform that equips students with the resources, advice and guidance necessary to excel in the field of law.
+<br><br></td></tr>
+<br>
+</td>
+<tr>
+<td>
+<b>What we do: </b>
+<br>
+Enable students to read and produce articles through conducting extensive research, while also providing key information on upcoming events, definitions of law terminoloty and tips for top law university applicatiions!
+<br><br>
+</td>
+</tr>
+<tr>
+<td>
+To <b> submit articles</b>, please send an email with your written article attached at <b>lawlahsoc@gmail.com</b>.
+</tr>
+</table>
 </div>
 </div>
 </div>
@@ -329,13 +393,13 @@ Latest Articles:
 <th span id="name">Quote of The Week~</th>
 </tr>
 <tr>
-<td span id="quote">The end of law is not to abolish or restrain, but to <span id="decorate">preserve and enlarge freedom</span>. For in all the states of created beings capable of law, 
+<td span id="quote">The end of law is not to abolish or restrain, but to <span id="decorate">preserve and enlarge freedom</span>. For in all the states of created beings capable of law,
 where there is no law, there is no <span id="decorate">freedom.</span>
-<br><br>- Quote by John Locke </td> 
+<br><br>- Quote by John Locke </td>
 </tr>
 </table>
 <br>
-<footer>This website is created by the Law Society of Garden International School Kuala Lumpur~</footer>
+<footer>This website is created by LawLah! of Garden International School Kuala Lumpur~</footer>
 <br><br>
 </body>
 </html>
