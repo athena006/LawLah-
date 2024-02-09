@@ -1,405 +1,332 @@
-<!Doctype html> <!--Home Page Code-->
-<html>
-<head lang ="en">
-<meta charset="UTF-8">
-<meta name="title" content="LawLah! Website - Home Page">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-body{
-font-family:"Georgia";
-background-color:#ECC7F3;
-background-size:cover;
-}
-table{
-width:100%;
-padding:30px;
-border-radius:10px;
-background-color:#D0ACE2;
-text-align:left;
-}
-#HTitle{
-font-size:2em;
-color:#6D5EBA;
-text-align:left;
-}
-#HDesc{
-font-size:1em;
-font-style:italic;
-color:black;
-}
-#Title{
-text-align:left;
-}
-img{
-border-radius:8px;
-}
-#Logo{
-padding-left:20px;
-text-align:right;
-}
-td{
-padding:15px;
-color:#6D5EBA;
-border-radius: 10px;
-}
-#picture_expand{
-padding: 30px;
-}
-#picture_expand:hover{
--ms-transform:scale(1.2);
--webkit-transform:scale(1.2);
-transform:scale(1.05);
-transition:transform .4s;
-}
-th{
-padding:20px;
-color:#6D5EBA;
-font-family:"brush script mt";
-font-size:2em;
-}
-a{
-color:#6D5EBA;
-text-decoration:none;
-}
-a:hover{
-color:#6D5EBA;
-text-decoration:underline;
-}
-nav{
-margin-top:10px;
-}
-nav ul{
-list-style-type:none;
-background-color:#6D5EBA70;
-text-align: center;
-margin:0;
-padding:0;
-}
-nav li{
-color:#6D5EBA;
-display:inline-block;
-text-align:center;
-padding:10px 55px;
-font-size:15px;
-}
-nav li:hover{
-color:#6D5EBA;
-text-decoration:underline;
--ms-transform: scale(1.5);
--webkit-transform: scale(1.5);
-transform: scale(1.1);
-transition: transform .3s;
-}
-#background{
-border-radius:8px;
-box-sizing:border-box;
-width:100%;
-height:100%;
-padding:20px;
-overflow:hidden;
-display:inline-block;
-}
-#background:hover{
-background-color: #F4DEF450;
-background-size:cover;
-color:#6D5EBA;
-}
-.dropbutton{
-background-color:#6D5EBA10;
-color:#6D5EBA;
-padding:0px;
-font-size:16px;
-border:none;
-font-family:"Georgia";
-}
-.dropbutton:hover{
-color:#6D5EBA;
-text-decoration:underline;
-}
-.dropdown{
-position:relative;
-display:inline-block;
-}
-.option{
-display:none;
-position:absolute;
-background-color:#6D5EBA30;
-min-width:160px;
-box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
-z-index:1;
-font-family:"Georgia";
-}
-.option a{
-color:#6D5EBA;
-padding:10px 14px;
-text-decoration:none;
-display:block;
-}
-.option a:hover{
-background-color:#6D5EBA80;
-color:#E7D4F5;
-}
-.dropdown:hover .option{
-display:block;
-}
-.dropdown:hover .dropbtn{
-background-color:#3e8e41;
-}
-.textbox{
-font-family:sans serif;
-text-align:center;
-}
-.textboxTitle{
-font-size:2em;
-color:#6D5EBA;
-}
-#bio:hover{
-background-color:#F4DEF4;
-color:#9626E6;
-}
-div ul{
-list-style-type:none;
-text-align:center;
-border-radius:10px;
-background-color:#6D5EBA70;
-padding:20px;
-}
-div li{
-color:#6D5EBA;
-display:inline-block;
-padding:10px 35px;
-font-size:15px;
-}
-div li:hover{
--ms-transform: scale(1.5);
--webkit-transform: scale(1.5);
-transform: scale(1.3);
-transition: transform .4s;
-color:#6D5EBA;
-}
-#decorate{
-text-decoration:underline 2px #6D5EBA;
-font-style:italic;
-font-size:25px;
-}
-#Quotetable{
-width:100%;
-padding:30px;
-border-radius:10px;
-background-color:#6D5EBA50;
-text-align:center;
-}
-#name{
-font-family:"Garamond";
-font-size:25px;
-color: #6D5EBA;
-}
-#info{
-background-color: #ffffff50;
-}
-#quote{
-font-family:"Garamond";
-font-size:20px;
-}
-footer{
-padding-left:10px;
-color:black;
-text-decoration:underline;
-text-align:center;
-}
-footer:hover{
-color:#6D5EBA;
--ms-transform: scale(1.2);
--webkit-transform: scale(1.2);
-transform: scale(1.1);
-transition: transform .5s;
-}
-div.picture{
-width: 100%
-background-color:#ffffff90;
-box-shadow:0 10px 20px 0 rgba(0, 0, 0, 0.5), 0 15px 20px 0 rgba(0, 0, 0, 0.19);
-margin-bottom:25px;
-}
-div.descriptionbox{
-text-align: center;
-padding: 5px 10px;
-color:#6D5EBA;
-background-color:#ffffff90;
-}
-div.descriptionbox:hover{
-color:#6D5EBA;
--ms-transform:scale(1.5);
--webkit-transform: scale(1.5);
-transform:scale(1.0);
-transition:transform .4s;
-}
-#PictureTable{
-width:100%;
-text-align:"center";
-padding:50px;
-background-color:#6D5EBA30;
-border-radius:10px;
-table-border: 0px:
-}
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <style>
+        body {
+            font-family: Times New Roman, serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('background.png');
+            background-size: cover;
+        }
+
+        header {
+            background-color: #110A2B;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h3 {
+            margin: 0;
+        }
+        
+        h2 {
+        	text-align: center;
+        }
+        
+		div.sticky {
+  			position: -webkit-sticky;
+  			position: sticky;
+  			top: 0px;
+		}
+		
+		.container {
+  			position: relative;
+  			width: 100%;
+		}
+
+		.container img {
+ 			width: 100%;
+  			height: 100%;
+		}
+
+		.container .btn {
+  			position: absolute;
+  			top: 82%;
+  			left: 45%;
+  			transform: translate(-50%, -50%);
+  			-ms-transform: translate(-50%, -50%);
+  			background-color: #ffffff50;
+  			color: white;
+  			font-size: 16px;
+  			padding: 12px 24px;
+  			border: none;
+  			cursor: pointer;
+  			border-radius: 5px;
+  			text-align: center;
+		}
+
+		.container .btn:hover {
+  			background-color: #D1BCC970;
+		}
+		
+		a {
+			color: #D1BCC9;
+		}
+		
+        nav {
+            background-color: #110A2B;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 40px; /* Increased margin-bottom for more space */
+        }
+
+        section h2 {
+            font-size: 3em;
+        }
+
+        .caption {
+            font-style: italic;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        .button {
+            background-color: #ffffff01; 
+            border: #D1BCC9 solid 1px;
+            color: #D1BCC9;
+            padding: 5px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            height: 30px;
+            text-vertical-align: center;
+            width: 200px;
+            font-family: Times New Roman, Serif;
+        }
+
+        .button:hover {
+            background-color: #D1BCC940;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        .founder_table {
+        	width: 50%;
+        	margin-left: auto; 
+        	margin-right: auto; 
+        	color: #ffffff;
+        	border-spacing: 30px;
+        }
+        
+        .work_table {
+        	width: 60%;
+        	margin-left: auto;
+        	margin-right: auto;
+        	padding: 20px;
+        	border-spacing: 30px;
+        }
+        
+        .article_table {
+        	width: 60%;
+        	margin-left: auto; 
+        	margin-right: auto; 
+        }
+        
+        .article_table td {
+        	height:200px;
+        }
+        
+        .newsletter_table {
+        	margin-left: 10%;
+        	width: 85%;
+        }
+
+        .about-table {
+            border-radius: 10px;
+            width: 100%; 
+            margin-left: 10%; 
+            border-radius: 10px;        
+         }
+
+        .about-table td {
+            vertical-align: top; 
+            padding-right: 20px; 
+            border-radius: 10px;
+        }
+
+
+        .about-table button {
+            background-color: #D1BCC9;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .about-table button:hover {
+            background-color: #b89fb1;
+        }
+        
+        input[type=text] {
+  			width: 100%;
+ 			margin: 8px 0;
+ 			box-sizing: border-box;
+ 			border: none;
+ 			border-bottom: 2px solid white;
+ 			background-color: #ffffff01;
+ 			font-family: "Times New Roman";
+		}
+		
+		input[type=submit] {
+			background-color:#CDA3FF;
+			border: none;
+			width: 120px;
+			border-radius: 20px;
+			color: #000000;
+			padding: 8px 16px;
+			margin: 4px 2px;
+  			cursor: pointer;
+    </style>
 </head>
 <body>
-<header>
-<table>
+<div class="sticky" style="background-color: #110A2B; height: 2cm; display: flex; align-items: center; justify-content: space-between; height:1cm;">
+    <h3 style="color: #D1BCC9; margin-left: 20px;"><i>LAWLAH!</i></h3>
+    <nav>
+        <a href="#" style="color: white;">Home</a>
+        <a href="#" style="color: white;">Articles</a>
+        <a href="#" style="color: white;">About Us</a>
+        <a href="#" style="color: white;">Contact Us</a>
+    </nav>
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+<section>
+    <h2 style="font-size:6em; color:#ffffff;">LAWLAH!</h2>
+    <p class="caption" style="color:#D1BCC9;">Forum for future legal leaders</p>
+    <button class="button">SIGN IN</button>
+</section>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<table class="about-table">
+    <tr>
+        <td width="35%" style="text-align:center; color: #ffffff; background-color:#ffffff50; padding-left:1.5%">
+            <p style="color:#22014D; font-size:20px;"> <b>ABOUT US</b></p><hr color=white><br>
+             <p>We are a female led student platform dedicated to fostering a dynamic and inclusive community for aspiring law students, where knowledge and guidance coexist to the future cohort of legal leaders.</p><br>
+
+            <p>Our mission is to provide a platform that equips students with the resources, advice, and guidance necessary to excel in the field of law.</p><br>
+
+            <p>We aim to accomplish this by enabling students (regardless of age and school) to read and produce articles through extensive research.</p>
+        </td>
+        <td width="65%" style="padding-top:0px;"><div class="container">
+          <img src="team.png" alt="Team Image" width="100%">
+          <button class="btn"> MEET THE TEAM </button> </div>
+        </td>
+    </tr>
+</table>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<table class="founder_table">
+    <tr>
+        <th colspan="2" style="color:#ffffff; font-size:2em;">FOUNDERS</th>
+    </tr>
+    <tr>
+    <td width="50%"> <img src="Ashley.png" alt text="Ashley" width="100%"> </td>
+    <td width="50%"> <img src="Aisha.png" alt text="Ashley" width="100%"> </td>
+    </tr>
+    <tr>
+        <td style="background-color: #ffffff50; padding:25px; text-align: center; border-radius:10px;"><br><br>"Meaningful insights and maximum impact. Wendy made us data converts!"<br><br><br></td>
+        <td style="background-color: #ffffff50; padding:25px; text-align: center; border-radius:10px;"><br><br>"Our startup business wouldn't be where it is without Wendy's expertise."<br><br><br></td>
+    </tr>
+    <tr>
+        <td> <b>ASHLEY LAU</b> <br> founder </td>
+        <td> <b>AISHA WILSON</b> <br> co-founder </td>
+    </tr>
+</table>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<table class="work_table">
 <tr>
-<th><span id="HTitle">LAWLAH!</span></th>
-<td rowspan="2" id="Logo"><img src="Logo.png" alt="logo" width="150" height="150"></td>
-</tr>
-<tr>
-<td id="Title">Hi! Welcome to the official LawLah! website!</td>
-</td>
+<td><p style="font-size:3em; text-align:center; color: #ffffff;">DO YOU WANT TO WORK WITH US?</p></td>
+<td style="background-color:#E6D1FF50; color:#ffffff; text-align:center; padding: 20px; border-radius:10px;"><p>Work with us to publish your very own article with <b>full credit!</b> <br> <br> <i>Programme is eligible for anyone regardless of school and age.</i> <br><br> <a href="...">READ MORE</a> </td>
 </tr>
 </table>
-</header>
-<nav>
-<ul>
-<li><a href="LawLah! Homepage.html">Home</a></li>
-<li>
-<div class="dropdown">
-<button class="dropbutton">Articles</button>
-<div class="option">
-<a href="Law_Soc_Articles.html">Student's Articles</a>
-<a href="Law_Soc_News.html">Latest news!!!</a>
-<a href="Law_Soc_Goodreads.html">Extra stuff to read...</a>
-</div>
-</div>
-</li>
-<li><a href="Law_Soc_PPE.html"><style="font-size:20px;">PPE</style></a></li>
-<li><a href="Law_Soc_Contact.html">Contact</a></li>
-</ul>
-</nav>
-<br>
-<div>
-<div id="background">
-<div class="textbox">
-<div class="textboxTitle">A little about us...</div>
-<br>
-<span id="bio"><b>│ Justice │ Advocacy │ Law │ Rights │ Integrity │</b></span>
-<br><br>
-<b>LawLah!</b> of <b>Garden International School </b>is a female-led student platform dedicated to fostering a dynamic and inclusive community for aspiring law students, where knowledge and guidance coexist to future cohort of legal leaders.
-<br>
-<br>
-<table span id="PictureTable" >
+
+<br><br><br><br><br><br><br><br>
+<p style="color: #ffffff; font-size:2.5em; text-align: center;">LATEST ARTICLES</p>
+<table class="article_table">
 <tr>
-<th colspan="4">Founding Members</th>
-</tr>
-<tr span id="info">
-<td span id="picture_expand">
-<div class="picture">
-<img src="Ashley.png" alt="Ashley" style="width:100%">
-<div class="descriptionbox">
-<p>Ashley Lau<br>Founder</p></td>
-<td>Hi, I'm Ashley, a 6th form student. I'm interested in law and intend to pursue it. Our platform provides guidance and extensive research to help assist and aid aspiring law students to advance to a career in law.</td>
-</div>
-</div>
-</td>
-<td span id="picture_expand">
-<div class="picture">
-<img src="Aisha.png" alt="Aisha" style="width:100%">
-<div class="descriptionbox">
-<p>Aisha Wilson<br>Co-Founder &<br>Graphic Designer</p></td>
-<td>Hi I'm Aisha and I'm a sixth form student who's currently interesting in applying for law in uni. I hope this platform can help inspire and guide other aspiring law students <3 </td>
-</td>
-</div>
-</div>
-</tr>
-<tr span id="info">
-<td span id="picture_expand">
-<div class="picture">
-<img src="Claire.png" alt="Claire" style="width:100%">
-<div class="descriptionbox">
-<p>Claire Lim<br>Head Editor</p></td>
-<td>Hey, my name's Claire! I'm a student in Year 12 taking A Level English, Sociology, Psychology and Drama. I'm currently interested and plan to pursue Law as a career path in the future!</td>
-</div>
-</div>
-<td span id="picture_expand">
-<div class="picture">
-<img src="Kara.png" alt="Kara" style="width:100%">
-<div class="descriptionbox">
-<p>Kara Kelly<br>Editor</p></td>
-<td>Hi! My name is Kara and I am in Sixth Form. I've always had a passion for language and public speaking. I have been a part of many MUN and debate groups.</td>
-</div>
-</div>
-</td>
-</tr>
-<tr span id="info">
-<td span id="picture_expand">
-<div class="picture">
-<img src="Angel.png" alt="Angel" style="width:100%">
-<div class="descriptionbox">
-<p>Angel Kau<br>Editor</p></td>
-<td>I'm doing A Levels in Biology, psychology and maths. I'm interested in pursuing law in the future and I look forward to explore more about different types of law <3</td>
-</td>
-</div>
-</div>
-<td span id="picture_expand">
-<div class="picture">
-<img src="Eumelia.png" alt="Eumelia" style="width:100%">
-<div class="descriptionbox">
-<p>Eumelia Chew<br>Editor</p></td>
-<td>Heyy I'm Eumelia, a year 12 student currently studying A Level Physics, Economics, Maths and Computer Science. I'm interested in pursuing law, specifically family or corporate law.</td>
-</td>
-</tr>
-<tr span id="info">
-<td span id="picture_expand">
-<div class="picture">
-<img src="Athena.png" alt="Athena" style="width:100%">
-<div class="descriptionbox">
-<p>Athena Sia<br>Website builder & manager</p></td>
-<td>Hello, I'm Athena and I'm currently a year 12 student studying at GIS. I've always been interested in learning more about the law and how it protects individuals and their rights.</td>
-<td colspan="2">
-MORE INFO
-</td>
-</div>
-</div>
-</td>
-</div>
-</div>
+<td colspan="4" style="background-color: #E8D8DD;"> <img src="..."> </td>
+<td colspan="6" style="background-color: #D1BCC9;"> </td>
 </tr>
 </table>
 <br>
-<table border-spacing: 20px;>
+<table class="article_table">
 <tr>
-<td width="50%">
-<b>Our mission: </b><br>
-To provide a platform that equips students with the resources, advice and guidance necessary to excel in the field of law.
-<br><br></td></tr>
-<br>
-</td>
-<tr>
-<td>
-<b>What we do: </b>
-<br>
-Enable students to read and produce articles through conducting extensive research, while also providing key information on upcoming events, definitions of law terminoloty and tips for top law university applicatiions!
-<br><br>
-</td>
-</tr>
-<tr>
-<td>
-To <b> submit articles</b>, please send an email with your written article attached at <b>lawlahsoc@gmail.com</b>.
-</tr>
-</table>
-</div>
-</div>
-</div>
-<br>
-<table span id="Quotetable">
-<tr>
-<th span id="name">Quote of The Week~</th>
-</tr>
-<tr>
-<td span id="quote">The end of law is not to abolish or restrain, but to <span id="decorate">preserve and enlarge freedom</span>. For in all the states of created beings capable of law,
-where there is no law, there is no <span id="decorate">freedom.</span>
-<br><br>- Quote by John Locke </td>
+<td colspan="6" style="background-color: #E8D8DD;"> </td>
+<td colspan="4" style="background-color: #D1BCC9;"> <img src="..."> </td>
 </tr>
 </table>
 <br>
-<footer>This website is created by LawLah! of Garden International School Kuala Lumpur~</footer>
-<br><br>
+<table class="article_table">
+<tr>
+<td colspan="4" style="background-color: #E8D8DD;"> <img src="..."> </td>
+<td colspan="6" style="background-color: #D1BCC9;"> </td>
+</tr>
+<tr>
+<td colspan="10" style="text-align:center; font-size: 1em; color:#E8D8DD; height:30px;"><br><a href>READ MORE </a></td>
+</tr>
+</table>
+<br><br><br><br><br><br><br><br><br>
+
+<table class="newsletter_table">
+<tr>
+<td colspan="3"> <p style="text-align: left; color:#ffffff; font-size:3em;"> SIGN UP FOR OUR NEWSLETTER!</p> <br><br><br><br><br></td>
+</tr>
+<tr>
+<td colspan="3">
+<p style="font-size:20px; color:#ffffff;"> <i>enter your email: </i></p>
+<form action="/action_page.php">
+  <input style="color:#ffffff;" type="text" id="email" name="email"><br><br>
+  <input type="submit" value="SIGN UP">
+</form> 
+</td> 
+<td rowspan="5" style="text-align:center;">
+<img src="phone.png" height="550px">
+</td>
+</tr>
+<tr>
+<td style="color:#CDA3FF; text-align:left;"> <img src="email.png" width="70px">____lawlahsoc@gmail.com </td>
+</tr>
+<tr>
+<td style="color:#CDA3FF; text-align:left;"> <img src="email.png" width="70px">____lawlahsoc </td>
+</tr>
+<tr>
+<td height="50px"></tr>
+</table>
+
+<footer>
+    <p>&copy; 2024 Website designed by Aisha Wilson and developed Athena Sia</p>
+</footer>
+
 </body>
 </html>
