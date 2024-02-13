@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LawLah! Articles</title>
+    <style>
+        body {
+            font-family: Times New Roman, serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('background.png');
+            background-size: cover;
+        }
+
+        header {
+            background-color: #110A2B;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h3 {
+            margin: 0;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        h2 {
+        	text-align: center;
+        	color: #D1BCC9;
+        	font-size: 50px;
+        }
+        
+        .latest_table {
+        	width: 80%;
+        	margin-left: auto; 
+        	margin-right: auto;
+        }
+        
+        .latest_table td {
+        	color: #ffffff;
+        	padding:30px;
+        	vertical-align: top;
+        }
+        
+        .latest_table th {
+        	color: #ffffff;
+        	font-size: 25px;
+       }
+        
+		div.sticky {
+  			position: -webkit-sticky;
+  			position: sticky;
+  			top: 0px;
+		}
+		
+		* {
+  			box-sizing: border-box;
+		}
+		
+		.container {
+  			width: 80%;
+  			margin: 0 auto;
+		}
+
+		#myInput {
+			background-color: transparent;
+  			background-position: 10px 12px;
+  			background-repeat: no-repeat;
+  			width: 100%;
+  			font-size: 16px;
+  			padding: 12px 20px 12px 40px;
+  			border: 1px solid #ddd;
+  			margin-bottom: 12px;
+  			color: #ffffff;
+		}
+
+		#myUL {
+			display: none;
+  			list-style-type: none;
+  			padding: 0;
+  			margin: 0;
+		}
+
+		#myUL li a {
+  			border: 1px solid #ddd;
+  			margin-top: -1px; 
+  			background-color: #D1BCC950; 
+  			padding: 12px;
+  			text-decoration: none;
+  			font-size: 18px;
+  			color: #ffffff;
+  			display: block;
+		}
+
+		#myUL li a:hover:not(.header) {
+ 			background-color: #D1BCC995;
+ 			color: #000000;
+		}
+	
+		.btnContainer {
+  			display: flex;
+  			padding-left: 20%
+		}
+
+		.Filter {
+  			background-color: transparent;
+  			border: 2px solid #D1BCC9;
+  			padding: 10px 20px;
+  			font-size: 16px;
+  			color: #D1BCC9;
+  			cursor: pointer;
+  			margin-right: 10px; 
+		}
+		
+		.Filter:hover {
+			background-color: #D1BCC950;
+		}
+
+		.Filter:last-child {
+  			margin-right: 0; 
+		}
+	
+		a {
+			color: #D1BCC9;
+		}
+		
+        nav {
+            background-color: #110A2B;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 40px; 
+        }
+
+        section h2 {
+            font-size: 3em;
+        }
+
+        .caption {
+            font-style: italic;
+            font-size: 25px;
+        }
+        
+        .title_description {
+        	font-size: 25px;
+        	text_decorations: none;
+        	font-weight: normal;
+        }
+        
+        .article_table {
+        	width: 60%;
+        	margin-left: auto; 
+        	margin-right: auto; 
+        }
+        
+        .article_table td {
+        	height:200px;
+        	text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        .newsletter_table {
+        	margin-left: 10%;
+        	width: 85%;
+        }
+    </style>
+</head>
+<body>
+<div class="sticky" style="background-color: #110A2B; height: 2cm; display: flex; align-items: center; justify-content: space-between; height:1cm;">
+    <h3 style="color: #D1BCC9; margin-left: 20px; font-size:28px;">LAWLAH! <span class="title_description">&nbsp&nbsp&nbsp&nbsp&nbspForum for future legal leaders</span></h3>
+    <nav>
+        <a href="https://athena006.github.io/LawLah-/LawLah!_Homepage.html" style="color: white;">Home</a>
+        <a href="#" style="color: white;">Articles</a>
+        <a href="https://athena006.github.io/LawLah-/LawLah!_AboutUs.html" style="color: white;">About Us</a>
+        <a href="#" style="color: white;">Contact Us</a>
+    </nav>
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+<section>
+    <h2 style="font-size:6em; color:#ffffff;">ARTICLES</h2>
+    <p class="caption" style="color:#D1BCC9;">Written by you and us</p>
+</section>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<table class="latest_table">
+<tr>
+<th colspan="2" style="text-align:right;"> LATEST ARTICLE &nbsp&nbsp&nbsp&nbsp </th>
+</tr>
+<tr>
+<td style="width: 40%;"> <p style="font-size:30px; width:50%;"><b>ARTICLE TITLE</b></p> Descriptions </td>
+<td> <img src="team.png" width="100%"> </td>
+</tr>
+</table>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<div class="container">
+  <div id="searchContainer">
+    <h2>ARTICLES</h2>
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Articles.." title="ARTICLES">
+
+    <ul id="myUL">
+      <li><a href="#">Article 1</a></li>
+      <li><a href="#">Article 2</a></li>
+      <li><a href="#">Article 3</a></li>
+    </ul>
+  </div>
+</div>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    if (filter.trim() === '') {
+        ul.style.display = "none";
+    } else {
+        ul.style.display = "block";
+    }
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+<br><br><br><br>
+
+<div class="btnContainer">
+  <button class="Filter">STREAM</button>
+  <button class="Filter">SERIES</button>
+  <button class="Filter">SPECIAL</button>
+</div>
+<br>
+<table class="article_table">
+<tr>
+<td style="background-color: #E8D8DD; width: 35%;"> <img src="..."> </td>
+<td style="background-color: #D1BCC9;"> </td>
+</tr>
+</table>
+<br>
+<table class="article_table">
+<tr>
+<td style="background-color: #E8D8DD; width: 35%;"> <img src="..."> </td>
+<td style="background-color: #D1BCC9;"> </td>
+</tr>
+</table>
+<br>
+<table class="article_table">
+<tr>
+<td style="background-color: #E8D8DD; width: 35%;"> <img src="..."> </td>
+<td style="background-color: #D1BCC9;"> </td>
+</tr>
+<tr>
+<td colspan="2" style="color:#D1BCC9;"> <a href=""> LOAD MORE </a></td>
+</tr>
+</table>
+
+<table class="newsletter_table" style="margin-left:10%;">
+<tr>
+<td style="color:#CDA3FF; text-align:left;"> <img src="email.png" width="70px">____lawlahsoc@gmail.com <br><br><br><br></td>
+</tr>
+<tr>
+<td style="color:#CDA3FF; text-align:left;"> <img src="email.png" width="70px">____lawlahsoc </td>
+</tr>
+<tr>
+<td height="50px"></tr>
+</table>
+
+<footer>
+    <p>&copy; 2024 Website designed by Aisha Wilson and developed Athena Sia</p>
+</footer>
+
+</body>
+</html>
