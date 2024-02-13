@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LawLah! About Us</title>
+    <style>
+        body {
+            font-family: Times New Roman, serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('ContactUs_Background.png');
+            background-size: cover;
+        }
+
+        header {
+            background-color: #110A2B;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h3 {
+            margin: 0;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        h2 {
+        	text-align: center;
+        	color: #D1BCC9;
+        	font-size: 50px;
+        }
+        
+		div.sticky {
+  			position: -webkit-sticky;
+  			position: sticky;
+  			top: 0px;
+		}
+	
+		a {
+			color: #D1BCC9;
+		}
+		
+        nav {
+            background-color: #110A2B;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 40px; 
+        }
+
+        section h2 {
+            font-size: 3em;
+        }
+
+        .caption {
+            font-style: italic;
+            font-size: 25px;
+        }
+        
+        .title_description {
+        	font-size: 25px;
+        	text_decorations: none;
+        	font-weight: normal;
+        }
+        
+        .container {
+    		width: 60%;
+    		margin: 0 auto;
+    		padding: 20px;
+  		}
+  		
+		label {
+			display: inline-block;
+			width: 45%
+			text-align: left;
+			margin-bottom: 5px;
+  			color:#D1BCC9;
+  		}
+  		
+  		.form-group {
+  			margin-bottom: 15px;
+  		}
+  		
+  		input[type="text"], input[type="email"], input[type="tel"] {
+    		width: calc(50% - 10px);
+    		margin-bottom: 10px;
+    		padding: 8px;
+    		border: 1px solid #D1BCC9;
+    		color: #D1BCC9;
+    		background-color: #00000001;
+    		display: inline-block;
+    		box-sizing: border-box; 
+  		}
+  		
+  		input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="tel"]::placeholder {
+    		color: transparent;
+    		display: inline-block;
+  		}
+  			
+  		input[type="submit"] {
+    		padding: 10px 20px;
+    		border: none;
+    		background-color: #CDA3FF;
+    		color: #000000;
+    		cursor: pointer;
+    		font-family: "Times New Roman";
+    		width: 200px;
+  		}
+  		
+		.submit-btn {
+    		text-align: center;
+  		}
+		
+		.contact_table {
+		width: 40%;
+		margin-left: auto;
+		margin-right: auto;
+		color: #ffffff;
+		text-align: center;	
+		}
+		
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        .newsletter_table {
+        	margin-left: 10%;
+        	width: 85%;
+        }
+    </style>
+</head>
+<body>
+<div class="sticky" style="background-color: #110A2B; height: 2cm; display: flex; align-items: center; justify-content: space-between; height:1cm;">
+    <h3 style="color: #D1BCC9; margin-left: 20px; font-size:28px;">LAWLAH! <span class="title_description">&nbsp&nbsp&nbsp&nbsp&nbspForum for future legal leaders</span></h3>
+    <nav>
+        <a href="https://athena006.github.io/LawLah-/LawLah!_Homepage.html" style="color: white;">Home</a>
+        <a href="https://athena006.github.io/LawLah-/LawLah!_Articles.html" style="color: white;">Articles</a>
+        <a href="https://athena006.github.io/LawLah-/LawLah!_AboutUs.html" style="color: white;">About Us</a>
+        <a href="https://athena006.github.io/LawLah-/LawLah!_ContactUs.html" style="color: white;">Contact Us</a>
+    </nav>
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+<section>
+    <h2 style="font-size:6em; color:#ffffff;">CONTACT US</h2>
+    <p class="caption" style="color:#D1BCC9;">Drop us a message and we'll reply :)</p>
+</section>
+<br><br><br><br><br><br><br><br><br><br>
+
+<div class="container">
+  <form action="submit.php" method="post">
+    <div class="form-group">
+      <label for="first_name">FIRST NAME</label> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <label for="last_name">LAST NAME</label>
+      <br> <br>
+      <input type="text" id="first_name" name="first_name" placeholder="Enter your first name" required> &nbsp&nbsp&nbsp
+      <input type="text" id="last_name" name="last_name" placeholder="Enter your last name" required>
+    </div>
+    <br><br>
+    <div class="form-group">
+      <label for="email">EMAIL ADDRESS</label>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <label for="phone">PHONE NUMBER (OPTIONAL)</label>
+      <br> <br>
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required> &nbsp&nbsp&nbsp
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+    </div>
+    <br><br>
+    <div class="submit-btn">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<table class="contact_table"> 
+<tr>
+<th style="font-size:30px;">OR CONTACT US THROUGH OUR SOCIALS:<br><br> </th>
+</tr>
+<tr>
+<td style="padding-right:230px;"> <img src="email.png" width="70px"><a style= "color: #CDA3FF" href="...">____lawlahsoc@gmail.com </a> <br><br><br><br></td>
+</tr>
+<tr>
+<td style="padding-right:315px;"> <img src="insta.png" width="70px"><a style= "color: #CDA3FF" href="...">____lawlahsoc </a> <br><br><br><br></td>
+</tr>
+<tr>
+<br><td>Please <b>refrain</b> from contacting our members <b>directly</b>. <br><br><br>
+In dire <b>emergency</b>, contact our <b>directors</b> on instagram: <br><br><br>
+<b>ASHLEY</b> @ashleyxlau <br><br>
+<b>AISHA</b> @aishaawilson 
+<br><br><br><br><br><br>
+
+</table>
+<footer>
+    <p>&copy; 2024 Website designed by Aisha Wilson and developed Athena Sia</p>
+</footer>
+
+</body>
+</html>
